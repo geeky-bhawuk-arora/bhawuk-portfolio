@@ -81,7 +81,7 @@ const Footer = ({ scrollToSection }) => {
             <div className="flex items-center gap-2 text-gray-500 text-sm">
               <span>© {currentYear} {personalInfo.name}. Made with</span>
               <Heart size={16} className="text-red-400 animate-pulse" />
-              <span>using React & Tailwind CSS</span>
+              <span>by Bhawuk</span>
             </div>
             
             <div className="flex items-center gap-4 text-sm text-gray-500">

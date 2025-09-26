@@ -4,8 +4,8 @@ import { useScrollPosition } from './hooks/useScrollPosition';
 
 // Layout Components
 import Navigation from './components/layout/Navigation';
-// import Footer from './components/layout/Footer';
-// import BackgroundElements from './components/layout/BackgroundElements';
+import Footer from './components/layout/Footer';
+import BackgroundElements from './components/layout/BackgroundElements';
 
 // Section Components
 import HeroSection from './components/sections/HeroSection';
@@ -14,7 +14,7 @@ import HeroSection from './components/sections/HeroSection';
 // import SkillsSection from './components/sections/SkillsSection';
 // import ExperienceSection from './components/sections/ExperienceSection';
 // import ProjectsSection from './components/sections/ProjectsSection';
-// import ContactSection from './components/sections/ContactSection';
+import ContactSection from './components/sections/ContactSection';
 
 // Styles
 import './styles/global.css';
@@ -42,13 +42,13 @@ function App() {
       
       {/* Main Content */}
       <main className="relative z-10">
-        {/* <HeroSection scrollToSection={scrollToSection} /> */}
+        <HeroSection scrollToSection={scrollToSection} />
         {/* <StatsSection />
         <AboutSection />
         <SkillsSection />
         <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection /> */}
+        <ProjectsSection /> */}
+        <ContactSection />
       </main>
       
       {/* Footer */}
