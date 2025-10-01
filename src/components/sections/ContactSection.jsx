@@ -70,7 +70,8 @@ const ContactSection = () => {
         <AnimatedSection>
           <SectionHeader 
             title="Let's Connect" 
-            subtitle="Ready to bring your ideas to life? Let's discuss your next project and create something amazing together."
+            subtitle="Got a wild idea? A bug that's driving you crazy? Or do you just want to debate whether a hot dog is a sandwich? ;)
+Hit me up! Let's create something cool (or at least have a good laugh)."
           />
         </AnimatedSection>
         
