@@ -43,11 +43,11 @@ function App() {
       {/* Main Content */}
       <main className="relative z-10">
         <HeroSection scrollToSection={scrollToSection} />
-        {/* <StatsSection />
-        <AboutSection />
-        <SkillsSection />
+        {/* <StatsSection /> */}
+        {/* <AboutSection /> */}
+        {/* <SkillsSection />
         <ExperienceSection />
-        <ProjectsSection /> */}
+        <ProjectsSection />  */}
         <ContactSection />
       </main>
       

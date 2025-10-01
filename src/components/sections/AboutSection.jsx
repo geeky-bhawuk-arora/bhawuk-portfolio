@@ -1,4 +1,3 @@
-// src/components/sections/AboutSection.jsx
 import React from 'react';
 import { Code, Database, Globe, MapPin } from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
@@ -7,8 +6,8 @@ import { personalInfo } from '../../data/personalInfo';
 
 const AboutSection = () => {
   const coreSkills = [
-    'JavaScript', 'React', 'Node.js', 'Python', 'TypeScript', 
-    'MongoDB', 'PostgreSQL', 'AWS', 'Docker', 'Git'
+    'Python', 'Java', 'React', 'PySpark', 'FastApi', 
+    'Springboot', 'PyTorch', 'Azure'
   ];
 
   const services = [
@@ -51,17 +50,20 @@ const AboutSection = () => {
                 <span>{personalInfo.location}</span>
               </div>
               
-              <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a passionate software developer based in India, with expertise in modern web technologies. 
-                I love building applications that solve real-world problems and create meaningful user experiences 
-                that make a difference in people's lives.
-              </p>
-              
-              <p className="text-lg text-gray-300 leading-relaxed">
-                With a strong foundation in both frontend and backend technologies, I enjoy working on 
-                full-stack projects that challenge me to grow and learn new technologies while delivering 
-                high-quality, scalable solutions.
-              </p>
+              <div className="text-gray-300 text-lg leading-relaxed space-y-4">
+                <p>🚀 <strong>What I Actually Do:</strong></p>
+                
+                <ul className="list-disc list-inside space-y-2">
+                  <li>🧠 I teach computers to think — mostly so they can do my homework. So far, they just keep asking for more RAM.</li>
+                  
+                  <li>☕ Fueled by caffeine and Stack Overflow, my code is 90% logic, 10% magic, and 100% held together by hope.</li>
+                  
+                  <li>☁️ I put things in the cloud — basically a professional way of saying I upload projects and forget they exist.</li>
+                  
+                  <li>💥 My main hobby is "rapid, unscheduled disassembly." I build things that fly, and they kindly remind me how gravity works.</li>
+                </ul>
+              </div>
+
 
               <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
                 <h3 className="text-xl font-semibold text-blue-400 mb-4">Core Technologies</h3>

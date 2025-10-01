@@ -7,5 +7,5 @@ export const personalInfo = {
   phone: "+91 97821760005",
   linkedin: "https://linkedin.com/in/bhawuk-arora",
   github: "https://github.com/geeky-bhawuk-arora",
-  resumeUrl: "/https://drive.google.com/drive/folders/1_CUKnOHzB8MlVrgisnUR22m2OXwQDl4o?usp=drive_link"
-};
+  resumeUrl: "/"
+}
