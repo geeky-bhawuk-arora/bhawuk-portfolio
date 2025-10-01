@@ -1,4 +1,4 @@
-/* src/styles/globals.css - FIXED VERSION */
+/* src/styles/globals.css - CORRECTED VERSION */
 
 @tailwind base;
 @tailwind components;
@@ -42,11 +42,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Remove default margins */
+/* Remove default margins - CRITICAL FIX: REMOVED margin: 0; and padding: 0; */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
