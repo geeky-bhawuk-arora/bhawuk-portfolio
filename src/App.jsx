@@ -10,7 +10,7 @@ import BackgroundElements from './components/layout/BackgroundElements';
 // Section Components
 import HeroSection from './components/sections/HeroSection';
 // import StatsSection from './components/sections/StatsSection';
-import AboutSection from './components/sections/AboutSection';
+// import AboutSection from './components/sections/AboutSection';
 // import SkillsSection from './components/sections/SkillsSection';
 // import ExperienceSection from './components/sections/ExperienceSection';
 // import ProjectsSection from './components/sections/ProjectsSection';
@@ -44,7 +44,7 @@ function App() {
       <main className="relative z-10">
         <HeroSection scrollToSection={scrollToSection} />
         {/* <StatsSection /> */}
-        <AboutSection />
+        {/* <AboutSection /> */}
         {/* <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />  */}
