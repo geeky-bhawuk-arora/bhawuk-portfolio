@@ -7,5 +7,5 @@ export const personalInfo = {
   phone: "+91 97821760005",
   linkedin: "https://linkedin.com/in/bhawuk-arora",
   github: "https://github.com/geeky-bhawuk-arora",
-  resumeUrl: "/"
+  resumeUrl: "https://raw.githubusercontent.com/geeky-bhawuk-arora/oracle-university-sls-notes/main/uploads/Bhawuk_Arora_Resume_UC%20(1).pdf?token=A2XXQJA5U5MYXBGCDSRZVFDI4PKGY"
 }
