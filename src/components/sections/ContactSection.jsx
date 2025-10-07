@@ -4,6 +4,7 @@ import { Mail, Linkedin, Github, Send, CheckCircle, MapPin } from 'lucide-react'
 import AnimatedSection from '../ui/AnimatedSection';
 import SectionHeader from '../common/SectionHeader';
 import { personalInfo } from '../../data/personalInfo';
+import ContactForm from '../ContactForm';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -158,7 +159,7 @@ Hit me up! Let's create something cool (or at least have a good laugh)."
           </div>
           
           {/* Contact Form - 3 columns */}
-          <div className="lg:col-span-3">
+          {/* <div className="lg:col-span-3">
             <AnimatedSection delay={400}>
               <div className="p-10 bg-gradient-to-br from-slate-800/50 to-slate-800/30 rounded-3xl border border-slate-700/50 shadow-2xl">
                 <h3 className="text-3xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text mb-10 flex items-center gap-4">
@@ -259,7 +260,8 @@ Hit me up! Let's create something cool (or at least have a good laugh)."
                 )}
               </div>
             </AnimatedSection>
-          </div>
+          </div> */}
+          <ContactForm />
         </div>
       </div>
     </section>
