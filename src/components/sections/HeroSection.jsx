@@ -7,15 +7,20 @@ import { personalInfo } from '../../data/personalInfo';
 
 const HeroSection = ({ scrollToSection }) => {
   // ... (omitted handleResumeDownload)
+  // const handleResumeDownload = () => {
+  //   // Create a link element and trigger download
+  //   const link = document.createElement('a');
+  //   link.href = personalInfo.resumeUrl;
+  //   link.download = `${personalInfo.name.replace(' ', '_')}_Resume.pdf`;
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
   const handleResumeDownload = () => {
-    // Create a link element and trigger download
-    const link = document.createElement('a');
-    link.href = personalInfo.resumeUrl;
-    link.download = `${personalInfo.name.replace(' ', '_')}_Resume.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  window.open(personalInfo.resumeUrl, '_blank'); // Opens JPG in new tab/window
   };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -23,9 +28,12 @@ const HeroSection = ({ scrollToSection }) => {
           {/* MODIFIED: Replaced mb-8 on this div with flex-col and gap-6 to manage children spacing */}
           <div className="flex flex-col gap-6 items-center">
             {/* Profile Avatar */}
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center group hover:scale-105 transition-transform duration-300">
-              <User size={64} className="text-white" />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-0 group-hover:opacity-20 animate-pulse"></div>
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-purple-500 hover:scale-105 transition-transform duration-300 shadow-lg">
+              <img
+                src="https://res.cloudinary.com/bhawuk-prod/image/upload/v1759812322/bhawuk-portfolio-react/bhawuk_profile.jpg" 
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Name with Gradient (REMOVED mb-6) */}
@@ -62,8 +70,9 @@ const HeroSection = ({ scrollToSection }) => {
                 className="flex items-center gap-2"
               >
                 <Download size={18} />
-                Download Resume
+                View Resume
               </Button>
+
             </div>
           </div>
         </AnimatedSection>
