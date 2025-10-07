@@ -44,7 +44,7 @@ const Footer = ({ scrollToSection }) => {
               {personalInfo.name}
             </div>
             <p className="text-gray-400 mt-4 text-base leading-relaxed">
-              Full Stack Developer passionate about creating amazing digital experiences
+              On paper, I'm a student of AI & Data Science. In reality, I'm a professional bug creator and a full-time enthusiast of things that fly (and occasionally crash).
             </p>
           </div>
 
@@ -78,15 +78,29 @@ const Footer = ({ scrollToSection }) => {
 
         {/* Bottom Section */}
         <div className="border-t border-slate-700/50 pt-10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-2 text-gray-500">
-              <span>© {currentYear} {personalInfo.name}. Made with</span>
-              <Heart size={18} className="text-red-400 animate-pulse" fill="currentColor" />
-              <span>using React & Tailwind CSS</span>
-            </div>
+         <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-sm">
+          <div className="flex items-center gap-2">
+            <span>Made with</span>
+            <Heart
+              size={16}
+              className="text-red-400 animate-pulse"
+              fill="currentColor"
+            />
+            <span>
+              by{" "}
+              <a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-500 hover:underline transition-colors duration-200"
+              >
+                {personalInfo.name}
+              </a>
+            </span>
+          </div>
             
             <div className="flex items-center gap-8 text-gray-500">
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection('about')}
                 className="hover:text-blue-400 transition-colors font-medium"
               >
@@ -97,7 +111,7 @@ const Footer = ({ scrollToSection }) => {
                 className="hover:text-blue-400 transition-colors font-medium"
               >
                 Work
-              </button>
+              </button> */}
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="hover:text-blue-400 transition-colors font-medium"

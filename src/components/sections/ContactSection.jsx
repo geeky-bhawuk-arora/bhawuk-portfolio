@@ -57,7 +57,7 @@ const ContactSection = () => {
     {
       icon: Github,
       title: 'GitHub',
-      info: 'github.com/bhawuk-arora',
+      info: 'github.com/geeky-bhawuk-arora',
       description: 'Check out my code',
       gradient: 'from-pink-500 to-red-500',
       action: () => window.open(personalInfo.github, '_blank')
